@@ -1,4 +1,4 @@
-# JavaScript Game Library
+<!-- # JavaScript Game Library
 
 ## Part 1
 
@@ -10,7 +10,7 @@
 
 1. Create a `GameLibrary()` class with the following properties:
   -  `title` - title of the game library - i.e., 'Video Games', 'Board Games', etc.
-  -  `games` - array of all `Game()` instances
+  -  `games` - array of all `Game()` instances -->
 
 1. Create a `render()` method on the `GameLibrary()` prototype for adding instances of the `GameLibrary()` class to the DOM.
 
