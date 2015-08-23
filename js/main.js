@@ -1,3 +1,4 @@
+// Create the library function
 function Game(title, genre, year){
   this.title = title;
   this.genre = genre;
@@ -5,6 +6,7 @@ function Game(title, genre, year){
 }
 
 
+// Render the games and append both games and names
 Game.prototype.render = function(game){
   for(var name in game) {
   $('#games').append(game[name], ' ');
@@ -12,10 +14,12 @@ Game.prototype.render = function(game){
     $('#games').append('<br>');
 };
 
+// Create an array of title and games
 function GameLibrary(title, games){
     this.title = title;
     this.games = [];
 }
+
 
 GameLibrary.prototype.renderLibrary = function(){
   for(var i =0; i < this.games.length; i ++) {
@@ -28,7 +32,7 @@ $(document).on('ready', function() {
 
 zeldaLibrary = new GameLibrary('Zelda Games');
 
-
+// Pushes the games
   $('form').on('submit', function(e){
     e.preventDefault();
     $('#gameLibrary').html('');
